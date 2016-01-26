@@ -8,27 +8,26 @@ class DocumentParser(object):
     """Abstract parser of input format into DOM."""
 
     SIGNIFICANT_WORDS = (
-        "významný",
-        "vynikající",
-        "podstatný",
-        "význačný",
-        "důležitý",
-        "slavný",
-        "zajímavý",
-        "eminentní",
-        "vlivný",
-        "supr",
-        "super",
-        "nejlepší",
-        "dobrý",
-        "kvalitní",
-        "optimální",
-        "relevantní",
+        "significant", # "významný"
+        "excellent", # "vynikající"
+        "substantial", # "podstatný"
+        "distinguished", # "význačný"
+        "important", # "důležitý"
+        "famous", # "slavný"
+        "interesting", # "zajímavý"
+        "eminent", # "eminentní"
+        "influential", # "vlivný"
+        "super", # "supr"
+        "best", # "nejlepší"
+        "good", # "dobrý"
+        "quality", # "kvalitní"
+        "optimum", # "optimální"
+        "relevant", # "relevantní"
     )
     STIGMA_WORDS = (
-        "nejhorší",
-        "zlý",
-        "šeredný",
+        "worst", # "nejhorší"
+        "evil", # "zlý"
+        "nasty", # "šeredný"
     )
 
     def __init__(self, tokenizer):
